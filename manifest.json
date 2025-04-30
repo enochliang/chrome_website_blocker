@@ -1,0 +1,47 @@
+{
+    "manifest_version": 3,
+    "name": "Simple Website Blocker",
+    "version": "1.0",
+    "description": "Blocks specified websites using Declarative Net Request.",
+  
+    "permissions": [
+      "storage",
+      "declarativeNetRequest",
+      "declarativeNetRequestFeedback"
+    ],
+  
+    "host_permissions": [
+      "<all_urls>"
+    ],
+  
+    "background": {
+      "service_worker": "background.js"
+    },
+  
+    "declarative_net_request": {
+      "rule_resources": [
+        {
+          "id": "ruleset_1",
+          "enabled": true,
+          "path": "rules.json"
+        }
+      ]
+    },
+  
+    "options_page": "options.html",
+  
+    "action": {
+      "default_icon": {
+        "16": "images/icon16.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+      },
+      "default_title": "Website Blocker Settings"
+    },
+  
+    "icons": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  }

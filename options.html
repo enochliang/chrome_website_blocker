@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website Blocker Options</title>
+    <style>
+        body { font-family: sans-serif; padding: 10px; }
+        #blocked-list li { margin-bottom: 5px; display: flex; justify-content: space-between; align-items: center; }
+        #blocked-list button { margin-left: 10px; cursor: pointer; }
+        #add-section { margin-bottom: 15px; }
+    </style>
+</head>
+<body>
+    <h1>Website Blocker Settings</h1>
+
+    <div id="add-section">
+        <label for="new-domain">Add domain to block:</label>
+        <input type="text" id="new-domain" placeholder="e.g., example.com">
+        <button id="add-button">Add</button>
+    </div>
+
+    <h2>Currently Blocked Domains:</h2>
+    <ul id="blocked-list">
+        </ul>
+
+    <script src="options.js"></script>
+</body>
+</html>
